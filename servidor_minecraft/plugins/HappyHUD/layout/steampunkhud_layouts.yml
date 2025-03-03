@@ -1,0 +1,65 @@
+steampunkhud-layouts:
+  elements:
+    hud-heal:
+      asset: 'hud-heal'
+      align: right
+      position:
+        x: 50
+        y: 13
+      offset:
+        x: -78
+        y: 0
+    hud-food:
+      asset: 'hud-food'
+      align: right
+      position:
+        x: 50
+        y: 13
+      offset:
+        x: 25
+        y: 0
+    hud-shield:
+      asset: 'hud-shield'
+      align: right
+      position:
+        x: 50
+        y: 17
+      offset:
+        x: -78
+        y: 0
+    hud-air:
+      asset: 'hud-air'
+      align: right
+      position:
+        x: 50
+        y: 17
+      offset:
+        x: 25
+        y: 0
+    hud-xp:
+      asset: 'hud-xp'
+      align: right
+      position:
+        x: 50
+        y: 10
+      offset:
+        x: -95
+        y: 0
+    topleft:
+      asset: 'topleft'
+      align: left
+      position:
+        x: 20
+        y: 95
+      offset:
+        x: 0
+        y: 0
+    hud:
+      asset: 'hud'
+      align: center
+      position:
+        x: 50
+        y: 18
+      offset:
+        x: -2
+        y: -3

@@ -1,0 +1,7 @@
+test:
+  text: "%player_name%"
+  options:
+    Sek:
+      value: "Cool Guy!"
+  default:
+    value: "Player"

@@ -1,0 +1,189 @@
+ravagerstatue_n:
+  Type: vindicator
+  Display: ''
+  Health: 30
+  Faction: FallenHero
+  AIGoalSelectors:
+  - 0 clear
+  DamageModifiers:
+  - FIRE 0
+  - MAGIC 2.7
+  - PROJECTILE 0.6
+  Drops:
+  - exp 20-40 1
+  Damage: 10
+  Skills:
+  - cancelEvent{sync=true} ~onAttack
+  - stance{stance=statue} @self ~onSpawn
+  - model{mid=ravagerstatue;s=idle;n=false;delay=2;damagetint=false} @self ~onSpawn 
+  - state{s=idlestatic;li=0;lo=3;n=false;frame=0} @self ~onSpawn
+  - bodyclamp{m=fallenravager;c=360;delay=1} @self ~onSpawn
+  - setvariable{var=caster.zlocxd;value="<caster.l.z>-10";t=integer} @Self ~onSpawn
+  - message{m="Current loc<&co> <caster.l.z> loc minus 10<&co> <caster.var.zlocxd>";delay=1} @PlayersNearOrigin{r=75} ~onSpawn
+  - look{headOnly=false;immediately=false;repeat=40;repeatInterval=1;delay=0} @Location{c=<caster.l.x>,<caster.l.y>,<caster.var.zlocxd>,-180,-1} ~onSpawn
+  - spin{d=1;v=110;delay=0} @self ~onSpawn
+  - sound{s=emaginationfallenheroes:custom.fallenhero.hitmetal;p=1;v=1} @selflocation ~onDamaged 1 ?!damagecause{c=PROJECTILE}
+  - sound{s=emaginationfallenheroes:custom.fallenhero.hitmetal;p=1.6;v=1} @selflocation ~onDamaged 1 ?damagecause{c=PROJECTILE}
+  - skill{s=[
+    - sound{s=emaginationfallenravager:custom.fallenravager.statuefall;p=1;v=1.5} @selflocation
+    - model{mid=ravagerstatue;remove=true;delay=1} @self
+    - bodyclamp{m=ravagerstatue;c=0} @self
+    - model{mid=fallenravager3;delay=0;damagetint=false} @self
+    - partvisibility{m=fallenravager3;p=core;v=false;delay=0} @self
+    - partvisibility{m=fallenravager3;p=core;v=true;delay=1} @self
+    - effect:particles{particle=cloud;amount=150;hS=1.1;vS=0.55;speed=0;size=4.5;repeat=0;repeatinterval=1;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=hip;offset=LOCAL;y=0} 
+    - effect:particles{particle=cloud;amount=60;hS=0.6;vS=0.2;speed=0;size=4.5;repeat=0;repeatinterval=1;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=axe;offset=LOCAL;y=0}
+    - effect:particles{particle=cloud;amount=30;hS=0.3;vS=0.3;speed=0;size=4.5;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=head;offset=LOCAL;y=0} ];sync=true} @Self ~onDeath
+  Options:
+    ApplyInvisibility: true
+    Silent: true
+    AlwaysShowName: false
+    MovementSpeed: 0.01 #0.27
+    Interactable: true
+    Invincible: false
+    NoGravity: false
+    NoAi: false
+    FollowRange: 2
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+ravagerstatue_s:
+  Type: vindicator
+  Display: ''
+  Health: 30
+  Faction: FallenHero
+  AIGoalSelectors:
+  - 0 clear
+  DamageModifiers:
+  - FIRE 0
+  - MAGIC 2.7
+  - PROJECTILE 0.6
+  Drops:
+  - exp 20-40 1
+  Damage: 10
+  Skills:
+  - cancelEvent{sync=true} ~onAttack
+  - stance{stance=statue} @self ~onSpawn
+  - model{mid=ravagerstatue;s=idle;n=false;delay=2;damagetint=false} @self ~onSpawn 
+  - bodyclamp{m=fallenravager;c=360;delay=1} @self ~onSpawn
+  - sound{s=emaginationfallenheroes:custom.fallenhero.hitmetal;p=1;v=1} @selflocation ~onDamaged 1 ?!damagecause{c=PROJECTILE}
+  - sound{s=emaginationfallenheroes:custom.fallenhero.hitmetal;p=1.6;v=1} @selflocation ~onDamaged 1 ?damagecause{c=PROJECTILE}
+  - skill{s=[
+    - sound{s=emaginationfallenravager:custom.fallenravager.statuefall;p=1;v=1.5} @selflocation
+    - model{mid=ravagerstatue;remove=true;delay=1} @self
+    - bodyclamp{m=ravagerstatue;c=0} @self
+    - model{mid=fallenravager3;delay=0;damagetint=false} @self
+    - partvisibility{m=fallenravager3;p=core;v=false;delay=0} @self
+    - partvisibility{m=fallenravager3;p=core;v=true;delay=1} @self
+    - effect:particles{particle=cloud;amount=150;hS=1.1;vS=0.55;speed=0;size=4.5;repeat=0;repeatinterval=1;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=hip;offset=LOCAL;y=0} 
+    - effect:particles{particle=cloud;amount=60;hS=0.6;vS=0.2;speed=0;size=4.5;repeat=0;repeatinterval=1;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=axe;offset=LOCAL;y=0}
+    - effect:particles{particle=cloud;amount=30;hS=0.3;vS=0.3;speed=0;size=4.5;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=head;offset=LOCAL;y=0} ];sync=true} @Self ~onDeath
+  Options:
+    ApplyInvisibility: true
+    Silent: true
+    AlwaysShowName: false
+    MovementSpeed: 0.01 #0.27
+    Interactable: true
+    Invincible: false
+    NoGravity: false
+    NoAi: false
+    FollowRange: 2
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+
+ravagerstatue_e:
+  Type: vindicator
+  Display: ''
+  Health: 30
+  Faction: FallenHero
+  AIGoalSelectors:
+  - 0 clear
+  DamageModifiers:
+  - FIRE 0
+  - MAGIC 2.7
+  - PROJECTILE 0.6
+  Drops:
+  - exp 20-40 1
+  Damage: 10
+  Skills:
+  - cancelEvent{sync=true} ~onAttack
+  - stance{stance=statue} @self ~onSpawn
+  - model{mid=ravagerstatue;s=idle;n=false;delay=2;damagetint=false} @self ~onSpawn 
+  - state{s=idlestatic;li=0;lo=3;n=false;frame=0} @self ~onSpawn
+  - bodyclamp{m=fallenravager;c=360;delay=1} @self ~onSpawn
+  - setvariable{var=caster.xlocxd;value="<caster.l.x>+10";t=integer} @Self ~onSpawn
+  - message{m="Current loc<&co> <caster.l.x> loc plus 10<&co> <caster.var.xlocxd>";delay=1} @PlayersNearOrigin{r=75} ~onSpawn
+  - look{headOnly=false;immediately=false;repeat=40;repeatInterval=1;delay=0} @Location{c=<caster.var.xlocxd>,<caster.l.y>,<caster.l.z>,-90,-1} ~onSpawn
+  - spin{d=1;v=90;delay=0} @self ~onSpawn
+  - sound{s=emaginationfallenheroes:custom.fallenhero.hitmetal;p=1;v=1} @selflocation ~onDamaged 1 ?!damagecause{c=PROJECTILE}
+  - sound{s=emaginationfallenheroes:custom.fallenhero.hitmetal;p=1.6;v=1} @selflocation ~onDamaged 1 ?damagecause{c=PROJECTILE}
+  - skill{s=[
+    - sound{s=emaginationfallenravager:custom.fallenravager.statuefall;p=1;v=1.5} @selflocation
+    - model{mid=ravagerstatue;remove=true;delay=1} @self
+    - bodyclamp{m=ravagerstatue;c=0} @self
+    - model{mid=fallenravager3;delay=0;damagetint=false} @self
+    - partvisibility{m=fallenravager3;p=core;v=false;delay=0} @self
+    - partvisibility{m=fallenravager3;p=core;v=true;delay=1} @self
+    - effect:particles{particle=cloud;amount=150;hS=1.1;vS=0.55;speed=0;size=4.5;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=hip;offset=LOCAL;y=0} 
+    - effect:particles{particle=cloud;amount=60;hS=0.6;vS=0.2;speed=0;size=4.5;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=axe;offset=LOCAL;y=0}
+    - effect:particles{particle=cloud;amount=30;hS=0.3;vS=0.3;speed=0;size=4.5;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=head;offset=LOCAL;y=0} ];sync=true} @Self ~onDeath
+  Options:
+    ApplyInvisibility: true
+    Silent: true
+    AlwaysShowName: false
+    MovementSpeed: 0.01 #0.27
+    Interactable: true
+    Invincible: false
+    NoGravity: false
+    NoAi: false
+    FollowRange: 2
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+
+ravagerstatue_w:
+  Type: vindicator
+  Display: ''
+  Health: 30
+  Faction: FallenHero
+  AIGoalSelectors:
+  - 0 clear
+  DamageModifiers:
+  - FIRE 0
+  - MAGIC 2.7
+  - PROJECTILE 0.6
+  Drops:
+  - exp 20-40 1
+  Damage: 10
+  Skills:
+  - cancelEvent{sync=true} ~onAttack
+  - stance{stance=statue} @self ~onSpawn
+  - model{mid=ravagerstatue;s=idle;n=false;delay=2;damagetint=false} @self ~onSpawn 
+  - state{s=idlestatic;li=0;lo=3;n=false;frame=0} @self ~onSpawn
+  - bodyclamp{m=fallenravager;c=360;delay=1} @self ~onSpawn
+  - setvariable{var=caster.xlocxd;value="<caster.l.x>-10";t=integer} @Self ~onSpawn
+  - message{m="Current loc<&co> <caster.l.x> loc minus 10<&co> <caster.var.xlocxd>";delay=1} @PlayersNearOrigin{r=75} ~onSpawn
+  - look{headOnly=false;immediately=false;repeat=40;repeatInterval=1;delay=0} @Location{c=<caster.var.xlocxd>,<caster.l.y>,<caster.l.z>,-90,-1} ~onSpawn
+  - spin{d=1;v=-90;delay=0} @self ~onSpawn
+  - sound{s=emaginationfallenheroes:custom.fallenhero.hitmetal;p=1;v=1} @selflocation ~onDamaged 1 ?!damagecause{c=PROJECTILE}
+  - sound{s=emaginationfallenheroes:custom.fallenhero.hitmetal;p=1.6;v=1} @selflocation ~onDamaged 1 ?damagecause{c=PROJECTILE}
+  - skill{s=[
+    - sound{s=emaginationfallenravager:custom.fallenravager.statuefall;p=1;v=1.5} @selflocation
+    - model{mid=ravagerstatue;remove=true;delay=1} @self
+    - bodyclamp{m=ravagerstatue;c=0} @self
+    - model{mid=fallenravager3;delay=0;damagetint=false} @self
+    - partvisibility{m=fallenravager3;p=core;v=false;delay=0} @self
+    - partvisibility{m=fallenravager3;p=core;v=true;delay=1} @self
+    - effect:particles{particle=cloud;amount=150;hS=1.1;vS=0.55;speed=0;size=4.5;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=hip;offset=LOCAL;y=0} 
+    - effect:particles{particle=cloud;amount=60;hS=0.6;vS=0.2;speed=0;size=4.5;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=axe;offset=LOCAL;y=0}
+    - effect:particles{particle=cloud;amount=30;hS=0.3;vS=0.3;speed=0;size=4.5;sideOffset=0;delay=60} @ModelPart{m=fallenravager3;p=head;offset=LOCAL;y=0} ];sync=true} @Self ~onDeath
+  Options:
+    ApplyInvisibility: true
+    Silent: true
+    AlwaysShowName: false
+    MovementSpeed: 0.01 #0.27
+    Interactable: true
+    Invincible: false
+    NoGravity: false
+    NoAi: false
+    FollowRange: 2
+    KnockbackResistance: 1
+    PreventOtherDrops: true

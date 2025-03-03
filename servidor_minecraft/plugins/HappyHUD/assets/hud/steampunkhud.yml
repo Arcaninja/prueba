@@ -1,0 +1,115 @@
+hud-heal:
+  layers:
+    fill:
+      texture:
+        path: assets/steampunkhud/hp_flipbook.png
+      outlined: false
+      align: right
+      offset:
+        x: 0
+        y: -2
+      function:
+        listener: health
+        increment: 20
+        orientation: horizontal
+hud-xp:
+  layers:
+    fill:
+      texture:
+        path: assets/steampunkhud/xp_flipbook.png
+      outlined: false
+      align: right
+      offset:
+        x: 0
+        y: -4
+      function:
+        listener: exp
+        increment: 31
+        orientation: horizontal
+hud-food:
+  layers:
+    fill:
+      texture:
+        path: assets/steampunkhud/food_flipbook.png
+      outlined: false
+      align: right
+      offset:
+        x: 0
+        y: -2
+      function:
+        listener: food
+        increment: 20
+        orientation: horizontal
+        reversed: true
+hud-shield:
+  layers:
+    fill:
+      texture:
+        path: assets/steampunkhud/armor_flipbook.png
+      outlined: false
+      align: right
+      offset:
+        x: 0
+        y: -5
+      function:
+        listener: armor
+        increment: 20
+        orientation: horizontal
+hud-air:
+  layers:
+    fill:
+      texture:
+        path: assets/steampunkhud/bubble_flipbook.png
+      outlined: false
+      align: right
+      offset:
+        x: 0
+        y: -5
+      function:
+        reversed: true
+        listener: air
+        increment: 10
+        orientation: horizontal
+hud:
+  layers:
+    text-level:
+      text: "<#FFFFFF>%player_level%"
+      font: "default"
+      outlined: true
+      align: center
+      offset:
+        x: 120
+        y: -26
+    outline:
+      texture:
+        path: assets/steampunkhud/hotbartop.png
+topleft:
+  layers:
+    money-text:
+      text: "<#FFFFFF>%vault_eco_balance_formatted%"
+      font: "default"
+      outlined: false
+      align: center
+      offset:
+        x: 59
+        y: -57
+    player-text:
+      text: "<#FFFFFF>%player_name%"
+      font: "default"
+      outlined: false
+      align: center
+      offset:
+        x: 70
+        y: -17
+    time-text:
+      text: "<#FFFFFF>%world_time_world%"
+      font: "default"
+      outlined: false
+      align: center
+      offset:
+        x: 57
+        y: -28
+    outline:
+      texture:
+        path: assets/steampunkhud/hud_topleft.png
+#cWaXZVcSl1aHJXd1MWT5dFdBRkVwEERPFza61UNjRlTwU0MO12UwUXT1RnR2hDeMN3QMVVO
