@@ -113,6 +113,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2025-03-08 05:50:23 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
     "criteria": {
       "has_raw_iron": "2025-03-08 05:17:09 +0000"
@@ -170,6 +176,12 @@
   "minecraft:recipes/building_blocks/deepslate_tile_stairs": {
     "criteria": {
       "has_deepslate_tiles": "2025-03-08 04:52:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_bricks_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
     },
     "done": true
   },
@@ -233,6 +245,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/chiseled_polished_blackstone_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
   "lootr:25loot": {
     "criteria": {
       "loot_stat": "2025-03-08 05:01:26 +0000"
@@ -257,15 +275,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_blackstone_stairs_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite": {
     "criteria": {
       "has_andesite": "2025-03-08 05:17:08 +0000"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_blackstone_slab_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_stairs": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/andesite_wall_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2025-03-08 05:17:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
     },
     "done": true
   },
@@ -293,9 +335,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/polished_blackstone_button": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobblestone_slab": {
     "criteria": {
       "has_cobblestone": "2025-03-08 04:56:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_wall_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
     },
     "done": true
   },
@@ -344,6 +398,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:skeleton": "2025-03-08 04:56:18 +0000",
+      "minecraft:spider": "2025-03-08 05:50:18 +0000",
       "minecraft:zombie": "2025-03-08 05:18:35 +0000"
     },
     "done": false
@@ -360,9 +415,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/polished_blackstone_pressure_plate": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
     "criteria": {
       "has_raw_iron": "2025-03-08 05:17:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
     },
     "done": true
   },
@@ -419,9 +486,11 @@
       "minecraft:old_growth_pine_taiga": "2025-03-08 04:50:40 +0000",
       "minecraft:taiga": "2025-03-08 04:49:04 +0000",
       "minecraft:river": "2025-03-08 04:50:44 +0000",
+      "minecraft:dripstone_caves": "2025-03-08 05:46:31 +0000",
       "minecraft:snowy_taiga": "2025-03-08 05:22:14 +0000",
       "minecraft:grove": "2025-03-08 05:19:54 +0000",
       "minecraft:forest": "2025-03-08 04:47:07 +0000",
+      "minecraft:old_growth_birch_forest": "2025-03-08 05:52:48 +0000",
       "minecraft:meadow": "2025-03-08 05:09:05 +0000",
       "minecraft:savanna": "2025-03-08 04:55:50 +0000",
       "minecraft:plains": "2025-03-08 04:58:50 +0000"
@@ -440,9 +509,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_blackstone_slab": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
     "criteria": {
       "has_cobblestone": "2025-03-08 04:56:09 +0000"
+    },
+    "done": true
+  },
+  "lootr:100loot": {
+    "criteria": {
+      "loot_stat": "2025-03-08 05:41:57 +0000"
     },
     "done": true
   },
@@ -536,6 +617,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_blackstone_bricks": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/andesite_slab_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2025-03-08 05:17:08 +0000"
@@ -566,9 +653,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/polished_blackstone_wall": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "in_water": "2025-03-08 04:47:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2025-03-08 05:47:57 +0000"
     },
     "done": true
   },

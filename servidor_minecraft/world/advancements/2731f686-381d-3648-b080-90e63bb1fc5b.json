@@ -239,6 +239,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/armor_stand": {
+    "criteria": {
+      "has_stone_slab": "2025-03-08 05:48:04 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
     "criteria": {
       "has_cobblestone": "2025-03-08 05:27:22 +0000"
@@ -265,7 +271,9 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:skeleton": "2025-03-08 05:47:07 +0000",
       "minecraft:spider": "2025-03-08 04:52:51 +0000",
+      "minecraft:endermite": "2025-03-08 05:52:16 +0000",
       "minecraft:zombie": "2025-03-08 04:51:47 +0000"
     },
     "done": false
@@ -324,8 +332,11 @@
       "minecraft:taiga": "2025-03-08 05:12:44 +0000",
       "minecraft:frozen_river": "2025-03-08 05:20:26 +0000",
       "minecraft:river": "2025-03-08 04:58:41 +0000",
+      "minecraft:dripstone_caves": "2025-03-08 05:46:33 +0000",
       "minecraft:grove": "2025-03-08 05:19:57 +0000",
+      "minecraft:cold_ocean": "2025-03-08 05:56:27 +0000",
       "minecraft:forest": "2025-03-08 05:00:42 +0000",
+      "minecraft:old_growth_birch_forest": "2025-03-08 05:52:47 +0000",
       "minecraft:meadow": "2025-03-08 05:06:52 +0000",
       "minecraft:savanna": "2025-03-08 04:55:50 +0000",
       "minecraft:plains": "2025-03-08 04:58:47 +0000"
