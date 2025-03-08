@@ -13,6 +13,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:old_growth_pine_taiga": "2025-03-08 04:49:04 +0000",
       "minecraft:birch_forest": "2025-03-08 04:34:40 +0000",
       "minecraft:beach": "2025-03-08 04:29:06 +0000",
       "minecraft:river": "2025-03-08 04:34:34 +0000",
@@ -234,6 +235,12 @@
     },
     "done": true
   },
+  "lootr:25loot": {
+    "criteria": {
+      "loot_stat": "2025-03-08 04:44:58 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_blackstone_stairs_from_polished_blackstone_stonecutting": {
     "criteria": {
       "has_polished_blackstone": "2025-03-08 04:43:19 +0000"
@@ -288,6 +295,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:zombie_villager": "2025-03-08 04:47:29 +0000"
+    },
+    "done": false
+  },
   "minecraft:recipes/redstone/polished_blackstone_pressure_plate": {
     "criteria": {
       "has_polished_blackstone": "2025-03-08 04:43:19 +0000"
@@ -303,6 +316,12 @@
   "minecraft:recipes/decorations/polished_blackstone_brick_wall": {
     "criteria": {
       "has_polished_blackstone_bricks": "2025-03-08 04:43:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:zombie_villager": "2025-03-08 04:47:29 +0000"
     },
     "done": true
   },

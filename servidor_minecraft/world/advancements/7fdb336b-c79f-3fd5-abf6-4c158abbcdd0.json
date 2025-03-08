@@ -25,6 +25,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:old_growth_pine_taiga": "2025-03-08 04:49:04 +0000",
       "minecraft:birch_forest": "2025-03-08 04:34:47 +0000",
       "minecraft:river": "2025-03-08 04:37:19 +0000",
       "minecraft:grove": "2025-03-08 04:40:51 +0000",
@@ -160,6 +161,12 @@
   "minecraft:recipes/decorations/item_frame": {
     "criteria": {
       "has_leather": "2025-03-08 04:41:30 +0000"
+    },
+    "done": true
+  },
+  "lootr:25loot": {
+    "criteria": {
+      "loot_stat": "2025-03-08 04:52:19 +0000"
     },
     "done": true
   },
